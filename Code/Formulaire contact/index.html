@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        
+    </script>
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    
+    <h1>Formulaire de contact</h1>
+   
+        <div class="menu-container">
+            <!-- Icône du menu burger -->
+            <div class="burger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        
+            <!-- Liste des liens de navigation -->
+            <ul class="nav-menu">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Equipe</a></li>
+                <li><a href="#">Ultras</a></li>
+            </ul>
+        </div>
+    
+
+    <h2>
+        <button onclick="myFunction()">Mode sombre</button>
+    </h2>
+
+<form id="monFormulaire" action="" method="">
+        <!-- Nom -->
+        <input type="text" id="nom" name="nom" required placeholder="Nom">
+        <!-- Prénom -->
+        <input type="text" id="prénom" name="prénom" required placeholder="Prénom">
+        <!-- Mail -->
+        <input type="email" id="email" name="email" required placeholder="Email">
+
+        <!-- Mot de passe -->
+        <input type="password" id="motDePasse" name="motDePasse" required placeholder="Mot de passe">
+        <!-- Affiche un message d'erreur pour le mot de passe -->
+        <p id="motDePasseError" class="error"></p>
+
+
+        
+        <!-- Zone de texte -->
+        <textarea id="commentaire" name="commentaire" placeholder="Entrer text" plarows="4" cols="50"></textarea>
+
+        <!-- Case à cocher -->
+            
+        
+
+        <!-- Boutons radio -->
+        <div>
+            <input type="checkbox" id="abonnement" name="abonnement" value="s'abonner">
+            <label for="abonnement">S'abonner pour plus d'informations</label>
+            <p>Genre :</p>
+        <input type="radio" id="homme" name="genre" value="homme">
+        <label for="homme">Homme</label>
+        <input type="radio" id="femme" name="genre" value="femme">
+        <label for="femme">Femme</label>
+        <input type="radio" id="autre" name="genre" value="autre">
+        <label for="autre">Autre</label>
+        <!-- Affiche un message d'erreur pour le genre -->
+        <p id="genreError" class="error"></p>
+        </div>
+        
+
+        <!-- Pays -->
+        <label for="pays">Pays :</label>
+        <select id="pays" name="pays">
+            <option value="france">France</option>
+            <option value="espagne">Espagne</option>
+            <option value="italie">Italie</option>
+            <option value="italie">Allemagne</option>
+            <option value="italie">Autre</option>
+        </select>
+
+        <!-- Envoyer -->
+        <button type="envoyer">Envoyer</button>   
+
+</form>
+ <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- Je n'ai pas réussi à bien aligner correctement les boutons du bas et pour le dark mode il reste une bande qui ne change pas de couleur, je n'ai pas réussi a résoudre le problème -->
